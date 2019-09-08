@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Rotonda Regular';
+    src: url('../fonts/RotondaC.eot');
+    src: url('../fonts/RotondaC.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RotondaC.woff') format('woff'),
+    url('../fonts/RotondaC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Challenge Shadow';
+    src: url('../fonts/challengeshadow.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Challenge Contour';
+    src: url('../fonts/ChallengeContour.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

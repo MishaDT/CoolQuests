@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>CoolQuests</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/valid_form_feedback.js"></script>
+    <script src="js/click_category.js"></script>
+</head>
+
+<body>
+    <section class="head">
+        <div class="wrapper">
+            <div class="head__main">
+                <header class="header">
+                    <div class="header__main-logo">
+                        <a class="logo" href="index.html">CoolQuests</a>
+                        <a href="#" id="menu" class="icon">&#9776;</a>
+                    </div>
+                    <nav class="header__main-menu">
+                        <ul class="topnav" id="myTopnav">
+                            <li><a href="#list_kves">Квесты</a></li>
+                            <li><a href="#comment">Отзывы</a></li>
+                            <li><a href="#about">О компании</a></li>
+                            <li><a href="#franshiza">Франшиза</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="main__company-lozung">
+                    <h1>Самый лучшие квесты<br> уже в вашей стране!</h1>
+                </div>
+                <a class="main__next" href="#list_kves">
+                    <div class="next"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="main" id="list_kves">
+            <div class="wrapper">
+                <div class="sections main__list-items">
+                    <div class="title">
+                        <h1>Квесты</h1>
+                    </div>
+                    <div class="categories" id="categories">
+                        <button mode="on" class="button" filter="all">Все</button>
+                        <button mode="off" class="button" filter="wd">Химия</button>
+                        <button mode="off" class="button" filter="ud">С оружием</button>
+                        <button mode="off" class="button" filter="moc">Дженга</button>
+                        <button mode="off" class="button" filter="doc">Хогвардц</button>
+                    </div>
+                    <div class="list-items filter" id="list-items">
+                        <div filter="wd" class="itemen">
+                            <div class="item-img"><img src="img/geli.jpg" alt="Химическая опасность">
+                                <div class="description_quest">
+                                    <p class="description">Филиалы «Химической опасности» работают в разных регионах России и странах Европы. Сегодня под этим брендом работает более трехсот представительств. Общий объем инвестиций тут составляет 6.350.000 рублей.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-title"><span>Химическая опасность</span>
+                                <div class="rating">
+                                    <span>Рейтинг:</span>
+                                    <span class="star_rating">5 звёзд</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div filter="ud" class="itemen">
+                            <div class="item-img"><img src="img/tir.jpg" alt="Оружейный сюрприз">
+                                <div class="description_quest">
+                                    <p class="description">Оружейный сюрприз – это развлечение людей в новом формате и отличный бизнес, который приносит удовольствие и посетителям и предпринимателю.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-title"><span>Оружейный сюрприз</span>
+                                <div class="rating">
+                                    <span>Рейтинг:</span>
+                                    <span class="star_rating">4.7 звёзд</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div filter="moc" class="itemen">
+                            <div class="item-img"><img src="img/dzenga.jpg" alt="На пути дженги">
+                                <div class="description_quest">
+                                    <p class="description">Франшиза «На пути дженги» – это бизнес на организации квестов для людей в возрасте от 14 до 20 лет. Заработок здесь основывается на проведении шоу-программ с участием аниматоров, продаже товаров для праздника и организации
+                                        выездных квестов.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-title"><span>На пути дженги</span>
+                                <div class="rating">
+                                    <span>Рейтинг:</span>
+                                    <span class="star_rating">4.2 звёзд</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div filter="doc" class="itemen">
+                            <div class="item-img"><img src="img/gari.jpg" alt="Краткий курс школы Хогвардца">
+                                <div class="description_quest">
+                                    <p class="description">Квесты «Краткий курс школы Хогвардца» известны своей подачей – это не просто эскейп формат, это хоррор-перфоманс – формат, который предполагает актеров на площадке.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="item-title"><span>Краткий курс школы Хогвардца</span>
+                                <div class="rating">
+                                    <span>Рейтинг:</span>
+                                    <span class="star_rating">4.5 звёзд</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main__about" id="about">
+        <div class="wrapper">
+            <div class="sections about">
+                <div class="title">
+                    <h1>О компании</h1>
+                </div>
+                <div class="about__small">
+                    <span>
+                        CoolQuests - это уникальные приключения для команды от 2 до 4 человек.
+                        Игроки заходят в помещение и за ними запирается дверь.
+                        Мы детально продумали каждую мелочь и обстановку внутри,
+                        что позволит вам полностью погрузиться в атмосферу игры.
+                        Для того чтобы пройти квест, нужно найти выход, проявляя смекалку и решая загадки.
+                    </span>
+                </div>
+                <div class="about__star-price">
+                    <div class="star-price__title">
+                        <h2>Преимущества нашей компании</h2>
+                    </div>
+                    <div class="star-price">
+                        <div class="price">
+                            <div class="price-img kreat"></div>
+                            <span class="name-price">Креативность</span>
+                        </div>
+                        <div class="price">
+                            <div class="price-img elit"></div>
+                            <span class="name-price">Лучшие в сфере</span>
+                        </div>
+                        <div class="price">
+                            <div class="price-img cool"></div>
+                            <span class="name-price">Познавательно</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="comment" id="comment">
+        <div class="sections comments">
+            <div class="slider__comments">
+                <div class="title">
+                    <h1>Отзывы</h1>
+                </div>
+                <div class="container">
+                    <div class='row'>
+                        <div class='col-md-offset-2 col-md-8 comment__box-shadow'>
+                            <div class="carousel slide" data-ride="carousel" id="quote-carousel">
+                                <ol class="carousel-indicators">
+                                    <li data-target="#quote-carousel" data-slide-to="0" class="active"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="1"></li>
+                                    <li data-target="#quote-carousel" data-slide-to="2"></li>
+                                </ol>
+                                <div class="carousel-inner" id="carousel-inner">
+                                    <div class="item active">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center img__avatar"><img src="img/mask.jpg" alt="Илон Маск"></div>
+                                                <div class="col-sm-9">
+                                                    <p class="name-users">Илон Маск</p>
+                                                    <p class="name-service">Химическая опасность</p>
+                                                    <p class="comment__user--text">Это лучшие квесты, особенно понравилась мини-ракета!</p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center img__avatar"><img src="img/di_caprio.jpg" alt="Леонардо Ди Каприо"></div>
+                                                <div class="col-sm-9">
+                                                    <p class="name-users">Леонардо Ди Каприо</p>
+                                                    <p class="name-service">На пути дженги</p>
+                                                    <p class="comment__user--text">Очень захватывающее приключение, точно пойду ещё!</p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                    <div class="item">
+                                        <blockquote>
+                                            <div class="row">
+                                                <div class="col-sm-3 text-center img__avatar"><img src="img/device.jpg" alt="Николай Ридтц"></div>
+                                                <div class="col-sm-9">
+                                                    <p class="name-users">Николай Ридтц</p>
+                                                    <p class="name-service">Оружейный сюрприз</p>
+                                                    <p class="comment__user--text">Трудно признаться, но эти квесты лучше CS:GO!</p>
+                                                </div>
+                                            </div>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <a data-slide="prev" href="#quote-carousel" class="left carousel-control"> <i class="fa fa-chevron-left"></i></a>
+                                <a data-slide="next" href="#quote-carousel" class="right carousel-control"> <i class="fa fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="franshiza" id="franshiza">
+        <div class="wrapper">
+            <div class="sections buy__franshiz">
+                <div class="title">
+                    <h1>Купить франшизу</h1>
+                </div>
+                <div class="text-block">
+                    <span>Оставьте заявку на приобретение франшизы</span>
+                </div>
+                <form class="get_golos" name="form" id="form" method="post" action="">
+                    <input type="text" class="input-golos" name="name" id="name" placeholder="Имя">
+                    <input type="tel" class="input-golos" name="number" id="number" placeholder="Моб.номер">
+                    <textarea class="input-golos" name="msg" id="msg" placeholder="Введите сообщение"></textarea>
+                    <input type="button" name="submit" value="Отправить" onclick="valid(document.getElementById('form'))">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="wrapper">
+            <div class="footer__social_and_copy">
+                <div class="footer__social">
+                    <a href="#"><i class="fa icon-social fa-facebook"></i></a>
+                    <a href="#"><i class="fa icon-social fa-twitter"></i></a>
+                    <a href="#"><i class="fa icon-social fa-youtube"></i></a>
+                    <a href="#"><i class="fa icon-social fa-whatsapp"></i></a>
+                </div>
+                <div class="footer__copy"><span>&copy; Все права защищены.</span></div>
+            </div>
+        </div>
+    </footer>
+    <script src='js/category.js'></script>
+    <script src='js/menu.js'></script>
+</body>
+
+</html>
